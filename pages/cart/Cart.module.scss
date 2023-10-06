@@ -1,0 +1,98 @@
+.cart {
+  .cartHeading {
+    @apply flex items-center gap-[20px];
+    h1 {
+      @apply text-[36px] font-[600];
+    }
+    span {
+      @apply text-[16px] font-[400] text-[#666];
+    }
+  }
+  .cartSearch {
+    @apply relative max-w-[544px] flex items-center py-[20px];
+    input {
+      @apply w-[100%] py-[8px] px-[16px] border rounded-[10px];
+    }
+    button {
+      @apply absolute right-[10px];
+    }
+  }
+  .cartItems {
+    @apply sm:flex-col  md:flex lg:flex justify-between w-[100%] py-[20px];
+    .cart_wrapper {
+      
+      .cart_wrapper__tabs{
+        @apply grid hidden md:grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 ;
+        // grid-template-columns: 500px 132px 140px 160px; 
+        
+      }
+      .products {
+        .product_wrapper {
+          @apply grid  items-center py-[20px] grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4;
+          // grid-template-columns: 500px 132px 140px 160px 60px;
+          .product_wrapper__name {
+            @apply flex items-center gap-[20px]  ;
+            img {
+              @apply w-[100px];
+            }
+            .product_wrapper__name_info {
+              @apply flex w-[314px] flex-col gap-[10px];
+              div {
+                @apply p-[5px] bg-[#358eda] rounded-[5px] w-[90px] text-center text-[#fff] text-[12px];
+              }
+              span {
+                @apply text-[12px] text-[#999];
+                b {
+                  @apply text-[#3caa3c] font-normal;
+                }
+              }
+              p {
+                @apply text-[14px];
+              }
+            }
+          }
+          .userTools {
+            @apply flex gap-[10px] text-[24px];
+          }
+        }
+      }
+    }
+    .cartBill {
+      @apply max-w-[292px] w-[100%] h-[100%] border rounded-[5px] flex flex-col gap-[10px] p-[20px];
+      h2 {
+        @apply text-[24px] font-[600];
+      }
+      p {
+        @apply flex;
+        span {
+          @apply ml-auto;
+        }
+        .bill {
+          @apply text-[20px] font-[600];
+        }
+      }
+
+      &_promocode {
+        @apply flex gap-[10px] items-center;
+        input {
+          @apply w-[100%] text-[#999] border border-[#cbcbcb] rounded-[5px] px-[16px] py-[6px];
+        }
+        span {
+          @apply px-[4px] text-[10px] text-[#fff] rounded-[50%] bg-[#999];
+        }
+      }
+      &_btns {
+        @apply w-[100%] flex flex-col gap-[20px] text-[15px] font-[700];
+        button {
+          @apply rounded-[5px] px-[16px] py-[10px];
+          &:first-child {
+            @apply bg-[#d60000] text-[#fff];
+          }
+          &:last-child {
+            @apply border-2 border-[#666] text-[#666];
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.signup {
+    @apply rounded-lg shadow-lg p-8;
+
+    &__wrapper {
+        @apply min-h-[70vh] flex items-center justify-center bg-white;
+
+        &__content {
+            @apply space-y-8 mx-auto max-w-lg py-6 px-3;
+
+            &__one {
+                @apply rounded-lg bg-white shadow-lg p-8 w-[650px];
+
+                &__text {
+                    @apply text-center;
+                    h1 {
+                        @apply text-4xl text-black;
+                    }
+                    p {
+                        @apply text-lg text-gray-600 text-center mt-3;
+                    }
+                }
+                &__input {
+                    @apply flex flex-col px-[50px] gap-[15px];
+
+                    input {
+                        @apply mt-8 h-10 px-[30px];
+                    }
+                }
+                &__button {
+                    @apply flex justify-between mt-8;
+                    button {
+                        @apply px-6 py-3 bg-red-600 text-white flex;
+                        border-radius: 6px;
+                    }
+                    &__arrow {
+                        @apply w-[30px] mt-[5px];
+                    }
+                    &__text {
+                        @apply text-base text-black px-6 py-2;
+                    }
+                }
+            }
+        }
+    }
+}

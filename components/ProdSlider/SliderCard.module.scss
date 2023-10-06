@@ -1,0 +1,30 @@
+.card{
+  @apply w-[230px] min-h-[300px] rounded-lg m-auto border py-[15px] px-[10px]  ; 
+  &_heart{
+      @apply flex mt-4 mr-4 text-[30px] text-[#666]; 
+      &__svg{
+          @apply ml-auto w-10 decoration-white ;
+      }
+  }
+  &_image{
+      @apply w-full;
+      img{
+        @apply w-full h-[150px];
+      }
+  }
+  &_name{
+      @apply text-sm m-8 ;
+  }
+  &_price{
+      @apply m-8 flex justify-between;
+  }
+  &_icons{
+      @apply   py-[9px] px-[6px] w-9 h-9 rounded-full hover:bg-red-700 bg-red-600;
+      &__svg{
+          @apply  w-6;
+      }
+  }
+  button {
+    @apply w-[80%] bg-[#d60000] text-[#fff] rounded-md py-[5px];
+  }
+}

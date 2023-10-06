@@ -1,0 +1,21 @@
+.sidebar {
+  @apply w-[400px] border max-h-[400px] p-[15px] rounded-[15px] flex flex-col gap-[10px];
+  &_filter {
+    @apply flex flex-col gap-[20px];
+    &__inputs {
+      @apply flex justify-between;
+      input {
+        @apply w-[47%] border rounded-[10px] py-[2px] px-[10px] outline-none;
+      }
+    }
+    &__btn {
+      @apply flex flex-col gap-[10px] px-[40px];
+      button {
+        @apply py-[5px] px-[15px] border rounded-[15px];
+        &:last-child {
+          @apply bg-[#d60000] text-[#fff];
+        }
+      }
+    }
+  }
+}

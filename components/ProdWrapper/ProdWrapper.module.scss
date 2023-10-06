@@ -1,0 +1,7 @@
+
+.ProdWrapper {
+  @apply flex justify-between;
+  .cards_wrapper {
+    @apply grid grid-cols-3;
+  }
+}

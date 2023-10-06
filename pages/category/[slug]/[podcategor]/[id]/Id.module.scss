@@ -1,0 +1,105 @@
+.main {
+    @apply w-[100%] sm:w-[100%] p-8;
+    h1 {
+        @apply text-2xl leading-7 font-bold;
+    }
+    &__wrapper {
+       @apply  md:flex my-4 md:gap-4 md:justify-between lg:flex;
+        &__right {
+            &__text {
+                span {
+                    @apply text-sm;
+                    color: #212121;
+                }
+            }
+            &__image {
+                @apply flex justify-center mt-4;
+                img {
+                    @apply w-[40%] sm:w-[80%];
+                }
+            }
+        }
+        &__center {
+            // @apply ;
+            span {
+                @apply font-normal text-base leading-5;
+                color: #666;
+            }
+            p {
+                @apply font-normal text-sm leading-5 mt-2;
+                color: #666;
+            }
+        }
+        &__left {
+            // @apply;
+            &__one {
+                @apply p-3 flex gap-3;
+                background-color: #dbf5db;
+                border-radius: 6px;
+                border: none;
+
+                &__img {
+                    @apply flex items-center;
+                    img {
+                        @apply w-[40px];
+                    }
+                }
+                &__text {
+                    h3 {
+                        @apply text-sm leading-5 font-bold;
+                        color: #3caa3c;
+                    }
+                    p {
+                        @apply text-sm;
+                    }
+                }
+            }
+            &__two {
+                @apply p-[20px] flex flex-col mt-6;
+                border: 1px solid #eee;
+                border-radius: 6px;
+                box-shadow: 0 2px 2px #e7e7e7;
+
+                h2 {
+                    @apply text-3xl leading-8 font-bold;
+                }
+                &__button1 {
+                    @apply mt-4 bg-red-600 text-white px-2 py-1 rounded-lg hover:bg-red-700;
+                }
+                &__button2 {
+                    @apply mt-4   px-2 py-1 rounded-lg hover:bg-slate-100;
+                    border-radius: 6px;
+                    border: #212121 2px solid;
+                }
+            }
+            &__thee {
+                @apply flex justify-between px-2 mt-6;
+                &__img {
+                    @apply w-[30px] flex items-center;
+                }
+                &__text {
+                    p {
+                        @apply text-xs leading-4 font-normal;
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    @apply fixed inset-0  flex items-center justify-center z-50 bg-black bg-opacity-50;
+    &__wrapper {
+        @apply py-6 px-10 bg-white w-[40%] rounded-lg shadow-lg h-[400px];
+        &__button {
+            @apply mt-4 bg-red-600 text-white px-2 py-1 rounded-lg hover:bg-red-700;
+        }
+        &__input {
+            @apply flex flex-col mt-5;
+            input {
+                @apply mt-8 h-10;
+            }
+        }
+    }
+}
